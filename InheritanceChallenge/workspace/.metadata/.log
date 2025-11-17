@@ -416,3 +416,116 @@ Contains: /home/thiagolcf/Downloads/InheritanceChallenge overlaps the workspace 
 
 !ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 11:26:48.155
 !MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2025-11-16 20:46:56.875 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.9
+java.vendor=Debian
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.235
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.413
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.447
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.449
+!MESSAGE Initializing Java Language Server 1.9.0.202203031534
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.458
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.458
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.462
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.463
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.495
+!MESSAGE ProjectRegistryRefreshJob finished 32ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.495
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.517
+!MESSAGE Started org.eclipse.buildship.core 22ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.539
+!MESSAGE LoadingGradleVersionJob finished 20ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:58.572
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:59.084
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2025-11-16 20:46:59.803
+!MESSAGE Initialization failed 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to import projects
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:136)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:107)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:244)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Invalid project description.
+Contains: OK
+Contains: /home/thiagolcf/Downloads/Git/git/programacao_exercicios/InheritanceChallenge overlaps the workspace location: /home/thiagolcf/Downloads/Git/git/programacao_exercicios/InheritanceChallenge/workspace
+!SUBENTRY 1 org.eclipse.jdt.ls.core 4 -1 2025-11-16 20:46:59.804
+!MESSAGE Failed to import projects
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2025-11-16 20:46:59.804
+!MESSAGE Invalid project description.
+!SUBENTRY 3 unknown 0 0 2025-11-16 20:46:59.804
+!MESSAGE OK
+!SUBENTRY 3 org.eclipse.core.resources 4 77 2025-11-16 20:46:59.804
+!MESSAGE /home/thiagolcf/Downloads/Git/git/programacao_exercicios/InheritanceChallenge overlaps the workspace location: /home/thiagolcf/Downloads/Git/git/programacao_exercicios/InheritanceChallenge/workspace
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:59.875
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:59.899
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:59.909
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:59.914
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:59.919
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:46:59.920
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:47:00.510
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:47:01.098
+!MESSAGE begin problem for /Worker.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:47:01.107
+!MESSAGE The value of the field Worker.name is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:47:01.107
+!MESSAGE 2 problems reported for /Worker.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:47:01.111
+!MESSAGE Validated 1. Took 198 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:47:02.292
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:47:02.307
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:47:02.411
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-11-16 20:47:02.427
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
