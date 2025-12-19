@@ -34,6 +34,5 @@ public class Burger {
         this.thirdToppings = thirdToppings;
         this.price = price * toppings.getPrice() * secondToppings.getPrice() * thirdToppings.getPrice();
     }
-    
 
 }
