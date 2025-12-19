@@ -1,7 +1,13 @@
 public class CheeseBurger extends Burger {
-
-    public CheeseBurger(String name, double price) {
-        super("cheeseburger", 13.30);
+    private double price = 7.50;
+    
+    public CheeseBurger(){
+    super("cheeseburger", 
     }
+
+    public double getPrice() {
+        return price;
+    }
+    
 
 }

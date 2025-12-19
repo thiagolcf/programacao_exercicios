@@ -3,7 +3,7 @@ public class Drinks {
     private int size;
     private double price;
 
-    public Drinks(String name, String size, double price) {
+    public Drinks(String name, int size, double price) {
         this.name = name;
         this.size = size;
         if (size == 1) {
