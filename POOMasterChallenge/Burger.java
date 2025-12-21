@@ -4,35 +4,55 @@ public class Burger {
     private Toppings toppings;
     private Toppings secondToppings;
     private Toppings thirdToppings;
+    private boolean isDeluxe;
 
-    
-    public Burger(String name, double price) {
+    public Burger(String name, double price, boolean isDeluxe) {
+        
         this.name = name;
-        this.price = price;
+        this.isDeluxe = isDeluxe;
+        if (isDeluxe) {
+            this.price = 25.0;
+        } else {
+            this.price = price;
+        }
     }
 
-
-    public Burger(String name, double price, Toppings toppings) {
+    public Burger(String name, double price, Toppings toppings, boolean isDeluxe) {
         this.name = name;
+        this.isDeluxe = isDeluxe;
         this.toppings = toppings;
-        this.price = price * toppings.getPrice();
+        if (isDeluxe) {
+            this.price = 25.0;
+        } else {
+            this.price = price * toppings.getPrice();
+
+        }
     }
 
-
-    public Burger(String name, double price, Toppings toppings, Toppings secondToppings) {
+    public Burger(String name, double price, Toppings toppings, Toppings secondToppings, boolean isDeluxe) {
         this.name = name;
         this.toppings = toppings;
+        this.isDeluxe = isDeluxe;
         this.secondToppings = secondToppings;
-        this.price = price * toppings.getPrice() * secondToppings.getPrice();
+        if (isDeluxe) {
+            this.price = 25.0;
+        } else {
+
+            this.price = price * toppings.getPrice() * secondToppings.getPrice();
+        }
     }
 
-
-    public Burger(String name, double price, Toppings toppings, Toppings secondToppings, Toppings thirdToppings) {
+    public Burger(String name, double price, Toppings toppings, Toppings secondToppings, Toppings thirdToppings, boolean isDeluxe) {
         this.name = name;
+        this.isDeluxe = isDeluxe;
         this.toppings = toppings;
         this.secondToppings = secondToppings;
         this.thirdToppings = thirdToppings;
-        this.price = price * toppings.getPrice() * secondToppings.getPrice() * thirdToppings.getPrice();
-    }
+        if (isDeluxe) {
+            this.price = 25.0;
+        } else {
 
+            this.price = price * toppings.getPrice() * secondToppings.getPrice() * thirdToppings.getPrice();
+        }
+    }
 }

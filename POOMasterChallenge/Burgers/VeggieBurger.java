@@ -1,20 +1,20 @@
-public class CheeseBurger extends Burger {
+public class VeggieBurger extends Burger {
     
-    public CheeseBurger(){
-        super("cheeseburger", 7.50);
+    public VeggieBurger(boolean isDeluxe){
+        super("veggie burger", 7.50, isDeluxe);
     }
 
-   public CheeseBurger(Toppings toppings) {
-    super("cheeseburger", 7.50, toppings);
+   public VeggieBurger(Toppings toppings, boolean isDeluxe) {
+    super("veggie burger", 7.50, toppings, isDeluxe );
    } 
 
-   public CheeseBurger(Toppings toppings, Toppings secondToppings) {
-    super("cheeseburger", 7.50, toppings, secondToppings);
+   public VeggieBurger(Toppings toppings, Toppings secondToppings, boolean isDeluxe) {
+    super("veggie burger", 7.50, toppings, secondToppings, isDeluxe);
 
    }
 
-   public CheeseBurger(Toppings toppings, Toppings secondToppings, Toppings thirdToppings) {
-    super("cheeseburger", 7.50, toppings, secondToppings, thirdToppings)
+   public VeggieBurger(Toppings toppings, Toppings secondToppings, Toppings thirdToppings, boolean isDeluxe) {
+    super("veggie burger", 7.50, toppings, secondToppings, thirdToppings, isDeluxe);
    }
 }
 
