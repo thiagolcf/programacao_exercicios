@@ -16,4 +16,10 @@ public class CheeseBurger extends Burger {
    public CheeseBurger(Toppings toppings, Toppings secondToppings, Toppings thirdToppings, boolean isDeluxe) {
     super("cheeseburger", 7.50, toppings, secondToppings, thirdToppings, isDeluxe);
    }
+
+   @Override
+   public double getPrice() {
+    return super.getPrice();
+   }
+   
 }

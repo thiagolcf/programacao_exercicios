@@ -9,6 +9,7 @@ public class Burger {
     public Burger(String name, double price, boolean isDeluxe) {
         
         this.name = name;
+        
         this.isDeluxe = isDeluxe;
         if (isDeluxe) {
             this.price = 25.0;
@@ -54,5 +55,9 @@ public class Burger {
 
             this.price = price * toppings.getPrice() * secondToppings.getPrice() * thirdToppings.getPrice();
         }
+    }
+
+    public double getPrice() {
+        return price;
     }
 }

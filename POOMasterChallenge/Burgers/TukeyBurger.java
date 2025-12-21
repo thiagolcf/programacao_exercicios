@@ -15,4 +15,9 @@ public class TukeyBurger extends Burger {
    public TukeyBurger(Toppings toppings, Toppings secondToppings, Toppings thirdToppings, boolean isDeluxe) {
       super("turkey burger", 16.50, toppings, secondToppings, thirdToppings, isDeluxe);
    }
+
+   @Override
+   public double getPrice() {
+      return super.getPrice();
+   }
 }
