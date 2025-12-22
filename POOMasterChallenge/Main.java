@@ -4,6 +4,16 @@ public class Main {
 
 	public static void main(String[] args) {
 
+	Scanner scanner = new Scanner(System.in);
+
+		
+		Toppings bacon = new Bacon();
+		Toppings friedEgg = new FriedEgg();
+
+		
+
+	boolean isDeluxe = false;	
+	
 
 		String menuWelcome = """
 
@@ -13,9 +23,11 @@ public class Main {
 
 				1) Compose your meal
 				2) Compose a deluxe meal
-				2) Choose the default meal
+				3) Choose the default meal""";
+	}
 
-				""";
+	void show(boolean isDeluxe, String input) {
+
 		String menuChooseBurger = """
 
 				Choose a burger type:
@@ -26,6 +38,15 @@ public class Main {
 
 				      """;
 
+		String menuChooseToppings = """
+				How many toppings do you want:
+
+				0
+				1
+				2
+				3
+
+						""";
 		String menuChooseDrink = """
 
 				Choose a drink:
@@ -44,6 +65,20 @@ public class Main {
 
 				      """;
 
+		switch (input) {
+			case "1":
+						
+				break;
+		
+			case "2":
+
+				break;
+		
+			default:
+				break;
+		}
 	}
+
+
 
 }

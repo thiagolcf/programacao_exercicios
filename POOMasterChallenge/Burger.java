@@ -19,41 +19,35 @@ public class Burger {
     }
 
     public Burger(String name, double price, Toppings toppings, boolean isDeluxe) {
-        this.name = name;
-        this.isDeluxe = isDeluxe;
+        this(name, isDeluxe);
         this.toppings = toppings;
         if (isDeluxe) {
             this.price = 25.0;
         } else {
-            this.price = price * toppings.getPrice();
+            this.price = price + toppings.getPrice();
 
         }
     }
 
     public Burger(String name, double price, Toppings toppings, Toppings secondToppings, boolean isDeluxe) {
-        this.name = name;
-        this.toppings = toppings;
-        this.isDeluxe = isDeluxe;
+        this(name, toppings, isDeluxe);
         this.secondToppings = secondToppings;
         if (isDeluxe) {
             this.price = 25.0;
         } else {
 
-            this.price = price * toppings.getPrice() * secondToppings.getPrice();
+            this.price = price + toppings.getPrice() + secondToppings.getPrice();
         }
     }
 
     public Burger(String name, double price, Toppings toppings, Toppings secondToppings, Toppings thirdToppings, boolean isDeluxe) {
-        this.name = name;
-        this.isDeluxe = isDeluxe;
-        this.toppings = toppings;
-        this.secondToppings = secondToppings;
-        this.thirdToppings = thirdToppings;
+       this(name, toppings, secondToppings, isDeluxe);
+       this.thirdToppings = thirdToppings;
         if (isDeluxe) {
             this.price = 25.0;
         } else {
 
-            this.price = price * toppings.getPrice() * secondToppings.getPrice() * thirdToppings.getPrice();
+            this.price = price + toppings.getPrice() + secondToppings.getPrice() + thirdToppings.getPrice();
         }
     }
 
